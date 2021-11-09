@@ -22,6 +22,9 @@ struct ContentView: View {
                 viewModel.tappedButton()
             }, label: {
                 Text("My Button")
+                    .foregroundColor(Color.red)
+                    .multilineTextAlignment(.center)
+                    .padding([.top, .leading, .bottom], 4.0)
             })
             .padding()
         }
